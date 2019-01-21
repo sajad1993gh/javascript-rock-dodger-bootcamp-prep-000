@@ -76,6 +76,7 @@ function createRock(x) {
       rock.remove()
     }
   }
+}
 function createRock(x) {
   const rock = document.createElement('div')
 
