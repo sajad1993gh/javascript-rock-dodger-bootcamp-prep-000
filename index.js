@@ -173,7 +173,7 @@ function moveDodger(e) {
   if (code === LEFT_ARROW) {
     moveDodgerLeft();
   } else if (code === RIGHT_ARROW) {
-    moveDodgerRight()
+    moveDodgerRight();
   }
 }
 
