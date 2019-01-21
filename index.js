@@ -189,7 +189,7 @@ function moveDodgerLeft() {
     if (left > 0) {
       DODGER.style.left = `${left - 4}px`;
     }
-  })
+  });
 }
 
 function moveDodgerRight() {
