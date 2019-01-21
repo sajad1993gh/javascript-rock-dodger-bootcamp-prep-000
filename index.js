@@ -126,6 +126,7 @@ function createRock(x) {
       rock.remove();
     }
   }
+  }
 }
 
   // We should kick of the animation of the rock around here
