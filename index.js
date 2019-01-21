@@ -92,7 +92,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-  GAME.appendChild(rock)
+  GAME.appendChild(rock);
 
 
   /**
@@ -109,7 +109,7 @@ function createRock(x) {
   rock.style.top = `${top += 2}px`;
 
     if (checkCollision(rock)) {
-      return endGame()
+      return endGame();
     }
  /**
      * Otherwise, if the rock hasn't reached the bottom of
@@ -148,8 +148,8 @@ function endGame() {
 
   document.removeEventListener('keydown', moveDodger);
 
-  START.innerHTML = 'Play again?'
-  START.style.display = 'inline'
+  START.innerHTML = 'Play again?';
+  START.style.display = 'inline';
 
   return alert('YOU LOSE!');
 }
@@ -184,7 +184,7 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
     window.requestAnimationFrame(function() {
-    const left = positionToInteger(DODGER.style.left)
+    const left = positionToInteger(DODGER.style.left);
 
     if (left > 0) {
       DODGER.style.left = `${left - 4}px`;
